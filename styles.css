@@ -1,0 +1,43 @@
+h1, h2 {
+    text-align: center; 
+    color: aliceblue;
+}
+
+label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+
+#trip-container1 {
+    background-color: rgba(235, 41, 41, 0.482);
+    height:fit-content;
+}
+
+#budget-container {
+    background-color: rgba(235, 41, 41, 0.482);
+    border-radius: 5px;
+}
+
+#adventure-container{
+    display:flex;
+}
+
+#trip-container2 {
+    background-color: rgba(235, 41, 41, 0.482);
+    height:fit-content;
+    width: 40%;
+}
+
+#trip-container3 {
+    margin-left: auto;
+}
+
+@media (max-width: 900px) {
+    #adventure-container {
+      display: block;
+    }
+
+    #trip-container2, #trip-container3 {
+        width: 100%;
+    }
+  }

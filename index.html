@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <link rel="icon" href="airplane.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container">
+
+    <h1 class="pt-5">Trip Planner</h1>    
+
+    <div class="card mt-5" id="trip-container1">
+        <div class="card-body">
+
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Start Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">End Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="new-trip">Trip Name</label>
+                        <input type="text" class="form-control" id="new-trip" placeholder="Add trip name">
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="new-cost">Estimated Cost</label>
+                        <input type="text" class="form-control" id="new-cost" placeholder="Add cost">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div>
+                <button id="add" class="btn btn-primary from-control">Add Trip</button>
+            </div>
+        </div>
+    </div> <br>
+
+    <table id="list" class="table table-danger table-striped" >
+        <tr>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Trip Name</th>
+            <th>Estimated Cost</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+    <br>
+
+    <div class="container" id="adventure-container">
+        <div class="card col-md-6 mt-5" id="trip-container2" >
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm" >
+                        <div class="form-group">
+                            <label for="new-adventure-name">Name of Adventure</label> 
+                            <input type="text" class="form-control" id="new-adventure-name">
+                        </div>
+                        <br>
+                        <div>
+                            <button id="new-adventure" class="btn btn-primary form-control">Create</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="col-md-6 mt-5" id="trip-container3">
+            <div id="adventures">
+            </div>
+        </div> <br>
+
+    </div>
+
+    
+    <br>
+    <footer style="color:aliceblue;">Photo by <a style="color:aliceblue;" href="https://unsplash.com/@lamagnotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">louis magnotti</a> on <a style="color:aliceblue;" href="https://unsplash.com/s/photos/travel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash.</a>
+
+        <a href="https://www.flaticon.com/free-icons/travel" title="travel icons" style="color: brown;">Travel icons created by Freepik - Flaticon</a>
+    </footer>
+   
+   
+
+    <style class="container-fluid">
+        body {
+          background-image: url('plane.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style>
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>
